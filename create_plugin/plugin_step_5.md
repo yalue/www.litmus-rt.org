@@ -8,6 +8,8 @@ Step 5: Adding P-EDF scheduling logic
 
 Step 4 covered adding necessary state variables to our plugin, so we're now ready to define how the DEMO plugin selects the task that should be scheduled next. Since we're implementing a P-EDF scheduler, we will use the `edf_preemption_needed()` function from `litmus/edf_common.h` to determine when the previous task should be preempted.
 
+{{TOC}}
+
 ## More headers related to job parameters and budgets
 
 Add the following two includes to the list at the start of `sched_demo.c`:

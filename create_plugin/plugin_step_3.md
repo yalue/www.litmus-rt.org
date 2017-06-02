@@ -8,6 +8,8 @@ Step 3: Creating debug messages using TRACE
 
 We know that the code from step 2 is working due to the `EINVAL` error, but but debugging a new plugin will likely require recording more detailed logging. Step 3 includes how this can be accomplished in LITMUS^RT plugins.
 
+{{TOC}}
+
 ## Why not use `printk` in a LITMUS^RT plugin?
 
 In most modules for the standard Linux kernel, `printk` is generally the go-to choice for writing debug messages to the kernel log. `printk`, however, requires some kernel locks and therefore can cause deadlock if we use it within a LITMUS^RT plugin when making scheduling decisions. LITMUS^RT provides the `TRACE` macro instead, which functions identically to `printk` from the programmer's perspective but doesn't require locking.

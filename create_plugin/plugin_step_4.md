@@ -8,6 +8,8 @@ Step 4: Defining per-CPU scheduling state for P-EDF
 
 Steps 1 through 3 set up skeleton code for a scheduler plugin, and demonstrated how to log debug messages. In step 4, we'll finally start adding code to support a Partitioned-EDF scheduler, starting with per-CPU state.
 
+{{TOC}}
+
 ## Including some headers
 
 To begin, add the following lines to the beginning of `litmus/sched_demo.c`:

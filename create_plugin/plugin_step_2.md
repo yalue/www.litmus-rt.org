@@ -8,6 +8,8 @@ Step 2: Adding stub functions for a LITMUS^RT plugin
 
 The first step just added an empty file to the LITMUS^RT kernel. In this step, we'll actually include some placeholder code for the new module.
 
+{{TOC}}
+
 ## Basic scheduler plugin code
 
 Modify `sched_demo.c` to contain the following code, which contains a minimal skeleton of a LITMUS^RT scheduler plugin. For now, the plugin does not do anything, apart from registering itself as an available scheduler:
