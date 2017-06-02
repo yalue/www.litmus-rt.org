@@ -10,7 +10,7 @@ In LITMUS, new scheduling policies are implemented as *scheduler plugins*, which
 
 ## Prerequisites
 
-In order to create new scheduler plugins, you must be capable of building the LITMUS^RT kernel from source. If you haven't already, follow the [instructions for building and installing LITMUS^RT](../instructions.html).
+In order to create new scheduler plugins, you must be capable of building the LITMUS^RT kernel from source. If you haven't already, follow the [instructions for building and installing LITMUS^RT](../installation.html).
 
 ## Steps
 
@@ -20,3 +20,4 @@ The instructions for implementing a new LITMUS^RT scheduler plugin have been sep
  2. [Adding stub functions for a LITMUS^RT plugin](plugin_step_2.html)
  3. [Creating debug messages using TRACE](plugin_step_3.html)
  4. [Defining per-CPU scheduling state for P-EDF](plugin_step_4.html)
+ 5. [Adding P-EDF scheduling logic](plugin_step_5.html)

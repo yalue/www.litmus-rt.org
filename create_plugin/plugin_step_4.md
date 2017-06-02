@@ -42,7 +42,7 @@ struct demo_cpu_state {
 static DEFINE_PER_CPU(struct demo_cpu_state, demo_cpu_state);
 
 #define cpu_state_for(cpu_id)   (&per_cpu(demo_cpu_state, cpu_id))
-#define local_cpu_state()       (&__get_cpu_var(demo_cpu_state))
+#define local_cpu_state()       (this_cpu_ptr(&demo_cpu_state))
 ```
 
 Note that we use Linux's per-processor allocation macro, `DEFINE_PER_CPU()`, to statically allocate the state required for the plugin. To make the later code more readable, we also define two accessor macros to wrap Linux's per-cpu data structure API: `cpu_state_for()` and `local_cpu_state()`.
