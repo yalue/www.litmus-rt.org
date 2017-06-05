@@ -21,3 +21,4 @@ The instructions for implementing a new LITMUS^RT scheduler plugin have been sep
  3. [Creating debug messages using TRACE](plugin_step_3.html)
  4. [Defining per-CPU scheduling state for P-EDF](plugin_step_4.html)
  5. [Adding P-EDF scheduling logic](plugin_step_5.html)
+ 6. [Task state changes](plugin_step_6.html)

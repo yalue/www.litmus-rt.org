@@ -23,6 +23,7 @@ To begin, add the following lines to the beginning of `litmus/sched_demo.c`:
 ```
 
 These includes bring in several definitions we'll need:
+
  - `linux/percpu.h`: Needed for making CPU-local allocations.
  - `linux/sched.h`: Needed for the definition of `struct task_struct`.
  - `litmus/litmus.h`: Contains many necessary definitions for working with LITMUS^RT.
